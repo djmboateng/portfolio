@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Projects — David Boateng</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700;800&family=Space+Grotesk:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/png" href="favicon.png" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="track" id="top"></div>
+    <header class="nav">
+      <a class="nav-brand" href="index.html" aria-label="Back to home">
+        <h2>David Boateng</h2>
+      </a>
+      <nav>
+        <a href="index.html#about">About</a><a href="projects.html" aria-current="page">Projects</a
+        ><a href="index.html#skills">Skills</a><a href="certifications.html">Certifications</a><a href="index.html#contact">Contact</a>
+      </nav>
+    </header>
+    <section class="page-hero hero-card">
+      <div class="hero-copy">
+        <a class="back-link" href="index.html"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M11 18l-6-6 6-6"/></svg> Back to portfolio</a>
+        <span class="eyebrow">Portfolio pit lane</span>
+        <h1>Projects</h1>
+        <div class="hero-stripe" aria-hidden="true"><span></span><span></span><span></span></div>
+        <p class="page-intro">A lineup of my builds, experiments, and collaborations.</p>
+        <div class="cert-stats">
+          <div class="cert-stat"><strong>2</strong><span>Active</span></div>
+          <div class="cert-stat"><strong>2</strong><span>Completed</span></div>
+        </div>
+      </div>
+    </section>
+    <section id="projects" class="card">
+      <div class="tabs" data-tab-group="projects">
+        <button class="tab active" data-tab="all">All projects</button>
+        <button class="tab" data-tab="track">🏎 On the Track</button>
+        <button class="tab" data-tab="finished">🚩 Finished Laps</button>
+        <button class="tab" data-tab="pit">🧰 In the Pit</button>
+      </div>
+      <div class="card-grid">
+        <article class="project-card" data-category="track">
+          <div class="project-head">
+            <div class="project-thumb logo"><img src="dasabenslogotransparent.png" alt="DaSaBens logo" loading="lazy"></div>
+            <div><div class="project-meta"><span class="project-tag">Active</span><span class="project-date">July 2026 – Present</span></div>
+            <h3>Website for Online Christian Resources — DaSaBens</h3></div>
+          </div>
+          <div class="project-body">
+            <p>Leading in the development of an online, teen-focused Christian platform created to help people overcome social media addiction and explore the Bible through digital content.</p>
+            <div class="chips"><span>Cloudflare</span><span>HTML/CSS/JS</span><span>StackBlitz</span><span>GitHub</span><span>DNS</span></div>
+          </div>
+        </article>
+        <article class="project-card" data-category="track">
+          <div class="project-head">
+            <div class="project-thumb logo"><img src="dclmlogo.png" alt="Deeper Life Bible Church logo" loading="lazy"></div>
+            <div><div class="project-meta"><span class="project-tag">Active</span><span class="project-date">July 2026 – Present</span></div>
+            <h3>Website Project @ Deeper Life Bible Church Alexandria — AV Ministry Team</h3></div>
+          </div>
+          <div class="project-body">
+            <p>Currently co-leading the programming and development of a general-purpose website for my church.</p>
+            <div class="chips"><span>Cloudflare</span><span>HTML/CSS/JS</span><span>Claude Code w/VS Code</span><span>GitHub</span><span>DNS</span></div>
+          </div>
+        </article>
+        <article class="project-card" data-category="finished">
+          <div class="project-head">
+            <div class="project-thumb zoomable"><img src="ece101finalannotatedbb.jpg" alt="Annotated breadboard of the Logic Wars NOT vs. XOR circuit" loading="lazy"></div>
+            <div><div class="project-meta"><span class="project-tag finished">Completed</span><span class="project-date">April 2026 – May 2026</span></div>
+            <h3>ECE101 — Logic Wars: NOT Gate vs. XOR Gate “CTF” Logic Circuit</h3></div>
+          </div>
+          <div class="project-body">
+            <p>Designed and built a prototype interactive two-player digital logic game that transforms combinational logic into a competitive capture-the-flag experience.</p>
+            <p>The project uses 74LS04 NOT and 74LS86 XOR logic gates, a transistor-based bistable LED network, switch arrays, and discrete components to create real-time gameplay.</p>
+            <div class="chips"><span>Circuit/Schematic Design</span><span>Boolean Logic</span><span>Troubleshooting</span><span>Electronics Hardware Design</span></div>
+          </div>
+        </article>
+        <article class="project-card" data-category="finished">
+          <div class="project-head">
+            <div class="project-thumb zoomable"><img src="smartassistivewalker.jpg" alt="Smart Assistive Walker prototype" loading="lazy"></div>
+            <div><div class="project-meta"><span class="project-tag finished">Completed</span><span class="project-date">Oct. 2025 – Dec. 2025</span></div>
+            <h3>ENGR107 Team Engineering Project — Smart Assistive Walker</h3></div>
+          </div>
+          <div class="project-body">
+            <p>Led my team through the design and development of a smart assistive walker. I programmed and wired an Arduino-based ultrasonic sensing system with an active buzzer in C/C++ and coordinated design reviews, testing, budgeting, CAD, and prototype fabrication.</p>
+            <div class="chips"><span>CAD</span><span>Engineering Process</span><span>C/C++</span><span>Project Management</span><span>Prototyping &amp; Fabrication</span></div>
+          </div>
+        </article>
+        <div class="empty-state is-hidden" data-category="pit"><span class="empty-icon">⛟</span><h3>Nothing to see here yet</h3><p>New projects are pulling into the pit soon.</p></div>
+      </div>
+    </section>
+    <div class="lightbox" id="lightbox"><img src="" alt=""></div>
+    <footer class="footer">© 2026 David Boateng</footer>
+    <script src="script.js"></script>
+  </body>
+</html>
